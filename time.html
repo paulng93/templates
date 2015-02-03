@@ -1,0 +1,9 @@
+
+{{ define "content" }}
+<style> p{font-size: xx-large} span.time {color:red}
+</style>
+<p> The time is now
+ 	<span class="time">{{.CurrentTime}}
+	</span>, {{.Name}}
+</p>
+{{ end }}
