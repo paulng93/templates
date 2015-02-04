@@ -1,20 +1,14 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../css/css490.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/css490.css" />
   </head>
   <body>
     <div class="logo">
       &nbsp;
     </div>
     <hr class="logo" />
-    <div class="menu"><p>
-        <a href="index.html">Home</a> | <a href="time">Time</a> | <a href="logout">Logout</a> | About Us
-    </p></div>
-
+    {{ template "header_footer" . }}
     {{ template "content" . }}
-
-    <div class="menu"><p>
-        <a href="index.html">Home</a> | <a href="time">Time</a> | <a href="logout">Logout</a> | About Us
-    </p></div>
+    {{ template "header_footer" . }}
   </body>
 </html>
